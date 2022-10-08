@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657542220-n8b4bEmz" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "มาก่อน รวยก่อน",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "size": "full",
+            "animated": true,
+            "url": "https://www.img.in.th/images/87101b6b1df133440dd27101c3705646.png"
+          }
+        ],
+        "margin": "md",
+        "borderWidth": "bold"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🎀 รับได้ทุกยูส 🎀",
+            "color": "#8B4513",
+            "weight": "bold",
+            "margin": "md",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "กดที่ปุ่มรับเครดิตฟรีได้เลย",
+            "align": "center",
+            "size": "sm",
+            "margin": "sm",
+            "color": "#8B4513"
+          },
+          {
+            "type": "text",
+            "text": "‼️ สมาชิกใหม่ ฝาก 300 รับ 450 ‼️",
+            "color": "#FF0033",
+            "align": "center",
+            "size": "md",
+            "margin": "md",
+            "weight": "bold"
+          }
+        ],
+        "margin": "md",
+        "cornerRadius": "md",
+        "backgroundColor": "#FFFF99"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "endColor": "#EE82EE",
+      "startColor": "#CCFF99",
+      "centerColor": "#FFF0F5"
+    }
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รับฟรี 50 เครดิต",
+            "weight": "bold",
+            "color": "#ffffff",
+            "align": "center",
+            "offsetTop": "none",
+            "size": "xl"
+          }
+        ],
+        "cornerRadius": "sm",
+        "paddingAll": "md",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/BFiIoar"
+        },
+        "backgroundColor": "#FF0000"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สมัครสมาชิกใหม่",
+            "color": "#ffffff",
+            "weight": "bold",
+            "align": "center",
+            "size": "xl"
+          }
+        ],
+        "paddingAll": "md",
+        "backgroundColor": "#00CC00",
+        "margin": "md",
+        "cornerRadius": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://www.autobetkub.com/"
+        }
+      }
+    ],
+    "backgroundColor": "#CCFF99",
+    "paddingAll": "xxl"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
